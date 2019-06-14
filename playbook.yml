@@ -9,7 +9,8 @@
     - name: Check if samplefolderusingshellmodule exists
       stat:
         path: /tmp/samplefolderusingshellmodule
-        
+      register: output
+         
     - name: Check output
       debug:
         var: output
