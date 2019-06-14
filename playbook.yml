@@ -5,4 +5,6 @@
       file:
         path: /tmp/samplefolder
         state: directory
-        
+    
+    - name: Create folder using shell module
+      shell: "mkdir /tmp/samplefolderusingshellmodule"
