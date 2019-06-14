@@ -6,5 +6,13 @@
         path: /tmp/samplefolder
         state: directory
     
+    - name: Check if samplefolderusingshellmodule exists
+      stat:
+        path: /tmp/samplefolderusingshellmodule
+        
+    - name: Check output
+      debug:
+        var: output
+    
     - name: Create folder using shell module
       shell: "mkdir /tmp/samplefolderusingshellmodule"
