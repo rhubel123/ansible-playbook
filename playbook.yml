@@ -3,6 +3,6 @@
   tasks:
     - name: Create folder
       file:
-        path: /samplefolder/
+        path: /tmp/samplefolder
         state: directory
         
